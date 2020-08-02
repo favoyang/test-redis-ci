@@ -12,7 +12,7 @@ jobs:
     name: CI - redis ${{ matrix.redis }}, node ${{ matrix.node-version }}
     steps:
     - name: setup redis
-      uses: shogo82148/actions-setup-redis@v1.7.1
+      uses: shogo82148/actions-setup-redis@v1
       with:
         redis-version: ${{ matrix.redis }}
     - name: ping redis
